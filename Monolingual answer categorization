@@ -1,0 +1,15 @@
+I would like to provide you with some Excel files and have you evaluate the answers based on specific categories. I will explain these categories so there is no confusion.
+1. Correct Answers
+First of all, "Correct" is obviously when we have answer=correct (in the Excel columns).
+If the target value is real, then it is categorized as "NR correct".
+If the target value is Y1 or Y3, it is simply categorized as "correct".
+
+2. Wrong Answers (Error Types)
+Next, regarding the "wrongs":
+Anchored: This applies when the target value is Y1 or Y3, and the model responds with the correct answer for when the target value is real.
+Completely Wrong: Answers are classified as completely wrong when none of the other conditions/categories apply.
+
+3. Evaluation Flexibility (Levels 2 & 3)
+However, for Levels 2 and 3, where complex mathematical operations are involved, I would like you to be somewhat flexible.
+For example: If the correct answer is 510,072,000 and the model returns 508,900,000, it should be considered correct because it is a large number and very close. Similarly, if the correct answer is 1.64 and it returns 1.62.
+Additionally: If one column uses terms like "billions" or powers of 10 ($10^n$) and the other uses zeros, do not automatically flag it as wrong. Make the necessary conversions first and then compare them. 
